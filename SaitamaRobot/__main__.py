@@ -88,7 +88,7 @@ List of all the Modules:
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
 )
 
-EREN_IMG = "https://te.legra.ph/file/005fd2536da1a82040320.jpg"
+EREN_IMG = "https://te.legra.ph/file/17704245d9089d66077f7.jpg"
 
 DONATE_STRING = """Durov Is my Cousin By The Way.."""
 
@@ -220,23 +220,19 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="🚦 ᴜᴘᴅᴀᴛᴇs 🚦",
-                                url="https://t.me/NicoRobin_updates",
+                                url="https://t.me/nagatoro_superbot_updates",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=" ᴡɪᴢᴀʀᴅ ",
-                                url="https://t.me/NicoRobin_updates/5",
-                            ),
-                            InlineKeyboardButton(
-                                text="ɢʀᴏᴜᴘ",
-                                url="https://t.me/The_loli_league/",
-                            ),
+                                url="https://t.me/nagatoro_superbot_updates/4",
+                            
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⚓️ ʜᴇʟᴘ ⚓️",
-                                url="https://t.me/NicoRobin_robot?start=help",
+                                text=" ʜᴇʟᴘ ",
+                                url="https://t.me/nagatoro_superbot?start=help",
                             ),
                         ],
                     ],
