@@ -1,4 +1,3 @@
-pip install git+https://github.com/pymc-devs/pymc.git
 from SaitamaRobot import db
 from typing import Dict, List, Union
 
