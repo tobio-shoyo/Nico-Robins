@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                             InlineKeyboardButton(
                                 text=" ᴡɪᴢᴀʀᴅ ",
                                 url="https://t.me/nagatoro_superbot_updates/4",
-                            
+                             ),
                         ],
                         [
                             InlineKeyboardButton(
