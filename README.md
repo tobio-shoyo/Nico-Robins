@@ -5,11 +5,11 @@
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Saitama suitable for Anime and Manga group chats. 
 
-Can be found on telegram as [Nico](https://t.me/NicoRobin_robot).
+Can be found on telegram as [Nagatoro](https://t.me/nagatoro_superbot).
 
-The Support group can be reached out to at [Support Nico](https://t.me/NicoRobin_Support), where you can ask for help about [Nico](https://t.me/NicoRobin_Robot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Nagatoro Support](https://t.me/nagatoro_support_chat), where you can ask for help about [Nagatoro](https://t.me/nagatoro_superbot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
-Owner bot [UNKNOWN](https://t.me/xtheanonymous) 
+Owner bot [DED](https://t.me/DED_PERSON) 
 
 ## How to setup/deploy.
 
