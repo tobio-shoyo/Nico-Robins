@@ -241,7 +241,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
+        f"╒═══「<b> Estimation results:</b> 」\n"
         f"ID: <code>{user.id}</code>\n"
         f"First Name: {html.escape(user.first_name)}"
     )
@@ -287,26 +287,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is <b>'Pirate King'</b>."
+        text += "\n\nThe power level of this person is <b>'Principal'</b>."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\nThis user is member of the 'Retarded Devs'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Yonkos'."
+        text += "\n\nThe power level of this person is 'Vice principal'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Warlords'."
+        text += "\n\nThe power level of this person is 'Teacher'."
         disaster_level_present = True 
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'New generation'."
+        text += "\n\nThe power level of this person is 'Sen-pai'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Bounty Hunter'."
+        text += "\n\nThe power level of this person is 'Kohai'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/NicoRobin_updates/5">🏴‍☠️</a>]'.format(
+        text += ' [<a href="https://t.me/nagatoro_superbot_updates/4">👨‍🏫</a>]'.format(
             bot.username,
         )
 
