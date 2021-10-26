@@ -225,13 +225,13 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=" ᴡɪᴢᴀʀᴅ ",
+                                text=" 🏫 Staffs 🏫 ",
                                 url="https://t.me/nagatoro_superbot_updates/4",
                              ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text=" ʜᴇʟᴘ ",
+                                text=" ♦️ ʜᴇʟᴘ ♦️ ",
                                 url="https://t.me/nagatoro_superbot?start=help",
                             ),
                         ],
