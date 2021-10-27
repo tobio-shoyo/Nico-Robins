@@ -199,7 +199,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Pirate King  just joined the group!!!", reply_to_message_id=reply,
+                    "Principal just joined the group!!!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -224,7 +224,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Whoa! a Yonkos just joined the group! Stay alert!",
+                    "Whoa! a Vice Principal just joined the group! Stay alert!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -237,7 +237,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "A Warlord just joined the group! stay alert!",
+                    "A Teacher just joined the group! stay alert!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -250,7 +250,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    " A New generation Just joined the group!", reply_to_message_id=reply,
+                    " A Senpai Just joined the group!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -262,7 +262,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "A Bounty Hunter just joined the group!", reply_to_message_id=reply,
+                    "A Kohai just joined the group!", reply_to_message_id=reply,
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -566,14 +566,14 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Pirate King  GOJOU! He left..", reply_to_message_id=reply,
+                    "Principal! He left..", reply_to_message_id=reply,
                 )
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Wizard HQ!",
+                    "See you later at the Staff room!",
                     reply_to_message_id=reply,
                 )
                 return
