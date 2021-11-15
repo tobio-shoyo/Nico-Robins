@@ -231,7 +231,13 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=" ♦️ ʜᴇʟᴘ ♦️ ",
+                                text=" ❕•LOGS•❕ ",
+                                url="https://t.me/nagatoro_logs",
+                             ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text=" ♦️HELP♦️ ",
                                 url="https://t.me/nagatoro_superbot?start=help",
                             ),
                         ],
