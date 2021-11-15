@@ -22,7 +22,6 @@ from SaitamaRobot import (
     updater,
     pbot)
 
-from SaitamaRobot.resources.imagefiles import EMILIA_START_IMG, EMILIA_HELP_IMG, EMILIA_IMG
 from SaitamaRobot.modules import ALL_MODULES
 from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
 from SaitamaRobot.modules.helper_funcs.misc import paginate_modules
@@ -65,7 +64,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-This is {BOT_NAME}[.]({EMILIA_START_IMG})
+This is {nagatoro}[.]({https://te.legra.ph/file/17704245d9089d66077f7.jpg})
 
 A Diverse Systematic Bot Written in Python.
 You can Add Me In Your Group for Knowing my True Power.
@@ -76,28 +75,28 @@ You can either use /help or the Commands Button Given Below To get a list of my 
 buttons = [
     [
         InlineKeyboardButton(
-            text="🏹Summon ME🏹",url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text="⚡Add me! Sen-pai⚡",url=f"t.me/nagatoro_superbot?startgroup=true"
         ),
     ],
     [
         InlineKeyboardButton(
-          text="Commands", callback_data="help_back"
+          text="♦️Help♦️", callback_data="help_back"
         ),
     ],
     [
         InlineKeyboardButton(
-          text="📮 Updates", url="https://t.me/TangentXOfficial"
+          text="🔺Updates🔻", url="https://t.me/nagatoro_superbot_updates"
         ),
     ],
          
     [
        InlineKeyboardButton(
-           text="🐱 Support", url=f"https://t.me/{SUPPORT_CHAT}"
+           text="🏠Support🏠", url=f"https://t.me/nagatoro_support_chat"
          ),
     ],
     [
         InlineKeyboardButton(
-          text="✒ Source", url="https://github.com/IzumiCypherX/EmiliaAnimeBot" # If you have a bit of dignity left in you, Do NOT Remove this Button
+          text="❕°Logs°❕", url="https://github.com/IzumiCypherX/EmiliaAnimeBot" # If you have a bit of dignity left in you, Do NOT Remove this Button
         ),
      
     ],
@@ -105,7 +104,7 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-`Hey there! My name is` [{BOT_NAME}]({EMILIA_HELP_IMG}) 
+`Hey there! My name is`nagatoro({https://te.legra.ph/file/17704245d9089d66077f7.jpg}) 
 I have Quite a Few Features, Go Ahead and Check out!"""
 
 IMPORTED = {}
@@ -216,7 +215,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "<code>{} is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
+            EMILIA_IMG, caption= "<code>{} nagatoro is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
                 BOT_NAME, uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -411,7 +410,7 @@ def get_help(update: Update, context: CallbackContext):
             InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="help_back"),
                                 InlineKeyboardButton(
-                                    text="Support", url="https://telegram.dog/TangentChats"
+                                    text="Support", url="https://t.me/nagatoro_support_chat"
                                 )]]
             ),
         )
