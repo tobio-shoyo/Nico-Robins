@@ -472,7 +472,7 @@ def settings_button(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Back",
-                                callback_data="stngs_back(https://t.me/nagatoro_superbot)".format(chat_id),
+                                callback_data="help_back()".format(chat_id),
                             ),
                         ],
                     ],
