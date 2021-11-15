@@ -228,8 +228,6 @@ def start(update: Update, context: CallbackContext):
                                 text=" 🏫 Staffs 🏫 ",
                                 url="https://t.me/nagatoro_superbot_updates/4",
                              ),
-                        ],
-                        [
                             InlineKeyboardButton(
                                 text=" ❕•LOGS•❕ ",
                                 url="https://t.me/nagatoro_logs",
