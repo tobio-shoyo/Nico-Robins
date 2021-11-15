@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="⚡Add me! Sen-pai⚡",
+                                text="⚡𝙰𝙳𝙳 𝙼𝙴! 𝚂𝙴𝙽-𝙿𝙰𝙸⚡",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
@@ -215,27 +215,27 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🏠SUPPORT🏠",
+                                text="🏠𝚂𝚄𝙿𝙿𝙾𝚁𝚃🏠",
                                 url=f"https://t.me/nagatoro_support_chat",
                             ),
                             InlineKeyboardButton(
-                                text="🔻UPDATES🔺",
+                                text="🔻𝚄𝙿𝙳𝙰𝚃𝙴𝚂🔺",
                                 url="https://t.me/nagatoro_superbot_updates",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🏫STAFFS🏫",
+                                text="🏫𝚂𝚃𝙰𝙵𝙵🏫",
                                 url="https://t.me/nagatoro_superbot_updates/5",
                             ),
                             InlineKeyboardButton(
-                                text="❕°LOGS°❕",
+                                text="❕°𝙻𝙾𝙶𝚂°❕",
                                 url="https://t.me/nagatoro_logs",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="♦️Help♦️",
+                                text="♦️𝙷𝙴𝙻𝙿♦️",
                                 url="https://t.me/nagatoro_superbot?start=help",
                             ),
                         ],
