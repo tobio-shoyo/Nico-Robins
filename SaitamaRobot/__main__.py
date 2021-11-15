@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ ᴀᴅᴅ ᴍᴇ! ➕",
+                                text="⚡Add me! Sen-pai⚡ ",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
@@ -215,11 +215,11 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⛩ sᴜᴘᴘᴏʀᴛ ⛩",
+                                text="🏠sᴜᴘᴘᴏʀᴛ🏠",
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
-                                text="🚦 ᴜᴘᴅᴀᴛᴇs 🚦",
+                                text="🔺ᴜᴘᴅᴀᴛᴇs🔺",
                                 url="https://t.me/nagatoro_superbot_updates",
                             ),
                         ],
@@ -358,7 +358,7 @@ def get_help(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Help",
-                                url="t.me/{}?start=ghelp_{}".format(
+                                url="https://t.me/nagatoro_superbot?start=ghelp_{}".format(
                                     context.bot.username, module,
                                 ),
                             ),
@@ -374,7 +374,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/{}?start=help".format(context.bot.username),
+                            url="https://t.me/nagatoro_superbot?start=help".format(context.bot.username),
                         ),
                     ],
                 ],
@@ -468,7 +468,7 @@ def settings_button(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Back",
-                                callback_data="stngs_back({})".format(chat_id),
+                                callback_data="stngs_back(https://t.me/nagatoro_superbot)".format(chat_id),
                             ),
                         ],
                     ],
