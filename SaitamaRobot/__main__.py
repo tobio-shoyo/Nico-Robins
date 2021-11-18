@@ -235,13 +235,13 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="𝙶𝚛𝚙 𝚏𝚘𝚛 𝚌𝚞𝚕𝚝𝚞𝚛𝚎𝚍 𝚖𝚊𝚗𝚜",
+                                text="😈𝙶𝚁𝙾𝚄𝙿 𝙵𝙾𝚁 𝙲𝚄𝙻𝚃𝚄𝚁𝙴𝙳 𝙼𝙰𝙽𝚂",
                                 url="https://t.me/cultured_man_aura",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="♦️𝙷𝙴𝙻𝙿♦️",
+                                text="♦️𝚆𝙷𝙰𝚃 𝙴𝙻𝚂𝙴 𝙸 𝙲𝙰𝙽 𝙳𝙾♦️",
                                 url="https://t.me/nagatoro_superbot?start=help",
                             ),
                         ],
