@@ -222,8 +222,6 @@ def start(update: Update, context: CallbackContext):
                                 text="🔻𝚄𝙿𝙳𝙰𝚃𝙴𝚂🔺",
                                 url="https://t.me/nagatoro_superbot_updates",
                             ),
-                        ],
-                        [
                             InlineKeyboardButton(
                                 text="|•𝚂𝚃𝙰𝙵𝙵•|",
                                 url="https://t.me/nagatoro_superbot_updates/4",
@@ -238,6 +236,8 @@ def start(update: Update, context: CallbackContext):
                                 text="||𝙶𝚁𝙾𝚄𝙿 𝙵𝙾𝚁 𝙲𝚄𝙻𝚃𝚄𝚁𝙴𝙳 𝙼𝙰𝙽𝚂||",
                                 url="https://t.me/cultured_man_aura",
                             ),
+                        ],
+                        [
                             InlineKeyboardButton(
                                 text="||𝙾𝙽𝙶𝙾𝙸𝙽𝙶 𝙰𝙽𝙸𝙼𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻||",
                                 url="https://t.me/Animehub_ongoing",
