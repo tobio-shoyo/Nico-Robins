@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🏠𝚂𝚄𝙿𝙿𝙾𝚁𝚃🏠",
+                                text="||𝚂𝚄𝙿𝙿𝙾𝚁𝚃||",
                                 url=f"https://t.me/nagatoro_support_chat",
                             ),
                             InlineKeyboardButton(
@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🏫𝚂𝚃𝙰𝙵𝙵🏫",
+                                text="|•𝚂𝚃𝙰𝙵𝙵•|",
                                 url="https://t.me/nagatoro_superbot_updates/4",
                             ),
                             InlineKeyboardButton(
@@ -235,8 +235,12 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="😈𝙶𝚁𝙾𝚄𝙿 𝙵𝙾𝚁 𝙲𝚄𝙻𝚃𝚄𝚁𝙴𝙳 𝙼𝙰𝙽𝚂",
+                                text="||𝙶𝚁𝙾𝚄𝙿 𝙵𝙾𝚁 𝙲𝚄𝙻𝚃𝚄𝚁𝙴𝙳 𝙼𝙰𝙽𝚂||",
                                 url="https://t.me/cultured_man_aura",
+                            ),
+                            InlineKeyboardButton(
+                                text="||𝙾𝙽𝙶𝙾𝙸𝙽𝙶 𝙰𝙽𝙸𝙼𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻||",
+                                url="https://t.me/Animehub_ongoing",
                             ),
                         ],
                         [
