@@ -88,7 +88,7 @@ List of all the Modules:
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
 )
 
-EREN_IMG = "https://te.legra.ph/file/17704245d9089d66077f7.jpg"
+EREN_IMG = "https://te.legra.ph/file/25258dd853a354b78937e.jpg"
 
 DONATE_STRING = """Durov Is my Cousin By The Way.."""
 
