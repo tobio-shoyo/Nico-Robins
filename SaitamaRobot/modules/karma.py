@@ -6,8 +6,8 @@ from SaitamaRobot.utils.filter_groups import karma_positive_group, karma_negativ
 from pyrogram import filters
 
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍|nice|noice|piro)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎|noob|Noob|gross|fuck off)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍|nice|noice|piro|waah)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|noob|Noob|gross|fuck off|chutiye|gandu|bsdk)$"
 
 
 @EREN.on_message(
@@ -99,7 +99,7 @@ async def karma(_, message):
                 user_name = (await EREN.get_users(int(user_idd))).username
             except Exception:
                 continue
-            msg += f"{user_name} : `{karma_count}`\n"
+            msg += f"{user_name} : {karma_count}\n"
             limit += 1
         await message.reply_text(msg)
     else:
@@ -107,7 +107,7 @@ async def karma(_, message):
         karma = await get_karma(chat_id, await int_to_alpha(user_id))
         if karma:
             karma = karma['karma']
-            await message.reply_text(f'**Total Points**: __{karma}__')
+            await message.reply_text(f'**Total Points**: {karma}')
         else:
             karma = 0
-            await message.reply_text(f'**Total Points**: __{karma}__')
+            await message.reply_text(f'**Total Points**: {karma}')
