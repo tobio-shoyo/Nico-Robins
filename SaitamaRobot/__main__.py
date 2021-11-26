@@ -71,7 +71,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ARA ARA Sen-pai! Watashi Nagatoro Desu, I am Groups Management Bot !! I can Help You Manage Your Group for you!!, send /help for command list...[.](https://te.legra.ph/file/17704245d9089d66077f7.jpg)"""
+PM_START_TEXT = """ARA ARA Sen-pai! Watashi Nagatoro Desu, I am a Group Management Bot !! I can Help You Manage Your Group for you!!, send /help or click the button down below for command list...[.](https://te.legra.ph/file/17704245d9089d66077f7.jpg)"""
 
 HELP_STRINGS = """
 Hey there, I'm Hayase Nagatoro!
