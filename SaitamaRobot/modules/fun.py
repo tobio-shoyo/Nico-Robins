@@ -159,6 +159,35 @@ def pat(update: Update, context: CallbackContext):
 
 
 @run_async
+def spank(update: Update, context: CallbackContext):
+    bot = context.bot
+    args = context.args
+    message = update.effective_message
+
+    reply_to = message.reply_to_message if message.reply_to_message else message
+
+    curr_user = html.escape(message.from_user.first_name)
+    user_id = extract_user(message, args)
+
+    if user_id:
+        spanked_user = bot.get_chat(user_id)
+        user1 = curr_user
+        user2 = html.escape(patted_user.first_name)
+
+    else:
+        user1 = bot.first_name
+        user2 = curr_user
+
+    SPANK_type = random.choice(("Text", "Gif", "Sticker"))
+    if SPANK_type == "Gif":
+        try:
+            temp = random.choice(fun_strings.SPANK_GIFS)
+            reply_to.reply_animation(temp)
+        except BadRequest:
+            SPANK_type = "Text"
+
+
+@run_async
 def roll(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(range(1, 7)))
 
@@ -359,6 +388,7 @@ __help__ = """
  • `/pat`*:* pats a user, or get patted
  • `/8ball`*:* predicts using 8ball method
  • `/meme`*:* sends random anime memes
+ • `/spank`*:* spanks a user, or get spanked
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -376,6 +406,7 @@ TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 MEME_HANDLER = DisableAbleCommandHandler(["meme", "memes"], meme)
+SPANK_HANDLER = DisableAbleCommandHandler("spank", spank)
 
 dispatcher.add_handler(MEME_HANDLER)
 dispatcher.add_handler(WEEBIFY_HANDLER)
@@ -392,6 +423,7 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(SPANK_HANDLER)
 
 __mod_name__ = "Fun"
 __command_list__ = [
@@ -410,6 +442,7 @@ __command_list__ = [
     "weebify",
     "8ball",
     "meme",
+    "spank"
 ]
 __handlers__ = [
     RUNS_HANDLER,
@@ -427,4 +460,5 @@ __handlers__ = [
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
     MEME_HANDLER,
+    SPANK_HANDLER,
 ]
