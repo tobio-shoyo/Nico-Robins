@@ -16,7 +16,7 @@ def get_user_common_chats(update: Update, context: CallbackContext):
     msg = update.effective_message
     user = extract_user(msg, args)
     if not user:
-        msg.reply_text("Hmmm.......\n This user seems like they doesn't exist.\nReply to a user crazy ass.")
+        msg.reply_text("Hmmm.......\nThis user seems like they doesn't exist....\nReply to a user crazy ass.")
         return
     common_list = get_user_com_chats(user)
     if not common_list:
