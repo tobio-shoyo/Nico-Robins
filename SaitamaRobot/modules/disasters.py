@@ -193,7 +193,7 @@ def addsupport(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Senpai to Teacher"
+        rt += "Requested HQ to promote this Senpai to Teacher"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -446,7 +446,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested HQ to demote this user to Civilian")
+        message.reply_text("Requested HQ to demote this user to a normal user")
         DEMONS.remove(user_id)
         data['supports'].remove(user_id)
 
@@ -465,7 +465,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Demon level Disaster!")
+        message.reply_text("This user is not a vice principal!")
         return ""
 
 
@@ -507,7 +507,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Wizard Wolf Disaster!")
+        message.reply_text("This user is not a teacher!")
         return ""
 
 
@@ -531,7 +531,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in TIGERS:
-        message.reply_text("Demoting to normal user")
+        message.reply_text("Demoting to a normal user")
         TIGERS.remove(user_id)
         data['tigers'].remove(user_id)
 
@@ -548,7 +548,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Wizard Tiger Disaster!")
+        message.reply_text("This user is not a Kohai!")
         return ""
 
 
