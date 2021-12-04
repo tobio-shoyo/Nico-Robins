@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="♦️𝚆𝙷𝙰𝚃 𝙴𝙻𝚂𝙴 𝙸 𝙲𝙰𝙽 𝙳𝙾♦️",
-                                url="https://t.me/nagatoro_superbot?start=help",
+                                callback_data="help_back"),
                             ),
                         ],
                     ],
